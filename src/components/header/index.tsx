@@ -3,12 +3,10 @@ import "./header.css"
 
 export default function Header(){
     return (
-        <header>
-            <h1 className="logo">
-                <a href="./">
-                    Z i v a
-                </a>
-            </h1>
-        </header >
-    )
+		<header>
+			<a className="logo" href="./">
+				z e v i
+			</a>
+		</header>
+	);
 }

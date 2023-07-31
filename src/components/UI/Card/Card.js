@@ -1,5 +1,5 @@
 import React from 'react';
-import "./card.scss"
+import "./card-styles.scss"
 
 // Transform this into ts component by looking into
 // https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components
