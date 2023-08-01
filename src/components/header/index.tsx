@@ -1,9 +1,9 @@
 import React from "react";
-import "./header.css"
+import "./header.css";
 
-export default function Header(){
-    return (
-		<header>
+export default function Header() {
+	return (
+		<header className="header">
 			<a className="logo" href="./">
 				z e v i
 			</a>

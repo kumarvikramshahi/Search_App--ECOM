@@ -1,9 +1,56 @@
+$bgColor: rgb(255, 255, 255);
+$smallBgColor: rgba(255, 255, 255, 0);
+$borderRadius: 10px;
+
 .searchBar {
-    display: inline-block;
-    border-radius: 10px;
-    margin: 5px 0px 10px 0px;
-    border: none;
-    height: 50px;
-    padding: 0px 0px 0px 10px;
-    background-color: rgb(255, 255, 255);
+	display: block;
+	border: none;
+    border-radius: $borderRadius;
+	width: 100%;
+	height: 100%;
+	padding: 0px 10px 0px 20px;
+	background-color: $bgColor;
+	font-size: 120%;
+}
+
+.searchBar:focus {
+	outline: none;
+}
+
+.searchBarSmall{
+    font-size: 90%;
+    background-color: $smallBgColor;
+}
+
+.searchBox {
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	border-radius: $borderRadius;
+	background-color: $bgColor;
+}
+
+.searchBoxSmall {
+    height: 40px;
+    background-color: $smallBgColor;
+    border: 1px solid black;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iconSvg {
+	display: block;
+	width: 50px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 20px 20px 20px 0px;
+}
+
+.iconSvgSmall {
+    width: 40px;
+    padding: 10px 20px 10px 0px;
+    background-color: $smallBgColor;
 }

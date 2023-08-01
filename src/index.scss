@@ -5,12 +5,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: -26px 0px;
-  font-size: 120%;
   line-height: 1.5;
-  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+$suggestionBoxMarginTop: 15px;
+$mobileScreenSideMargin: 4%;
+$suggestionBoxTextColor: rgb(74, 74, 74);
+$suggestionBoxTextColorHover: grey;
