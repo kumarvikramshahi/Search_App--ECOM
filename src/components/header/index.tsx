@@ -1,11 +1,12 @@
 import React from "react";
-import "./header.css";
+import "./header.scss";
+// import SearchIconSvg from "../../assets/searchIconSvg";
 
 export default function Header() {
 	return (
 		<header className="header">
 			<a className="logo" href="./">
-				z e v i
+				z e v<span className="scanIcon">🔍</span>
 			</a>
 		</header>
 	);

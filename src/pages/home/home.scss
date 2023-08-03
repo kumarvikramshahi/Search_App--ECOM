@@ -1,10 +1,16 @@
 @import "../../index.scss";
 
-#home {
+.home {
 	background-image: url(../../assets/homePageImg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// background-attachment:fixed;
+	background-size: 100% 100%; /* Adjust as needed */
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh  ;
 }
 
 .searchSection {
@@ -33,19 +39,20 @@
 	}
 }
 
-.latestTrends{
+.latestTrends {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
 }
 
-.psLink{
+.psLink {
 	display: inline-block;
 	text-decoration: none;
 	color: $suggestionBoxTextColor;
 	margin: 1px 0px;
+	text-transform: capitalize;
 }
 
-.psLink:hover{
+.psLink:hover {
 	color: $suggestionBoxTextColorHover;
 }
