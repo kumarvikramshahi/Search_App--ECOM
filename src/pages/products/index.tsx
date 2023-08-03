@@ -1,7 +1,7 @@
 import React, { useEffect, useState, ChangeEventHandler } from "react";
 import "./product.scss";
 import Header from "../../components/header";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import Card from "../../components/UI/Card/Card";
 import { Product } from "../../types/product";
 import { Brands, GenerateFakeProductData } from "../../fakeData";
@@ -16,8 +16,8 @@ export default function Products() {
 	const pricesPoints = [500, 1000, 3000, 4000, 5000];
 
 	// obtain category to fetch product
-	const location = useLocation();
-	const currentPath = location.pathname.split("/")[2];
+	// const location = useLocation();
+	// const currentPath = location.pathname.split("/")[2];
 
 	const handleSearchChange: ChangeEventHandler<HTMLInputElement> = (event) => {
 		console.log(event.target.value);

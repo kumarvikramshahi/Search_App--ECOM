@@ -28,7 +28,7 @@ const Card = ({ inputProduct, link, isSmall, isWishlisted, setWislisted, id }) =
 				}
 			</div>
 
-			{inputProduct.shortDescription ? <Link to={link}>{inputProduct.shortDescription}</Link> : <small> {inputProduct.title} </small>}
+			{inputProduct.shortDescription ? <Link className="pslink" to={link}>{inputProduct.shortDescription}</Link> : <small> {inputProduct.title} </small>}
 			{inputProduct.shortDescription ? null : (
 				<small>
 					<br />
