@@ -14,6 +14,7 @@ export default function Home(): JSX.Element {
 	const [popularSuggestions, setPopularSuggestions] = useState<string[] | null>(null);
 
 	const handleChange: ChangeEventHandler<HTMLInputElement> = (event) => {
+		console.log(fetchCategoryProduct);
 		let inputSearchString = event.target.value;
 		if (categories != null) {
 			for (let i = 0; i < categories.length; i++) {
