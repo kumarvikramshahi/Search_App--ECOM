@@ -4,23 +4,28 @@ import { LatestTrends, Product } from "./types/product";
 export const LatestTrendsData: LatestTrends[] = [
 	{
 		image: "https://img.freepik.com/free-photo/vertical-full-length-picture-isolated-image-charming-european-teenage-girl-wearing-stylish-summer-clothes_343059-3431.jpg?w=2000",
-		shortDescription: "Shirt with puffed sleeves"
+		shortDescription: "Shirt with puffed sleeves",
+		category: "electronics"
 	},
 	{
 		image: "https://i.pinimg.com/originals/4e/69/13/4e6913d73c2bdc65f1c212c090c87399.jpg",
-		shortDescription: "Linen Jumpsuit"
+		shortDescription: "Linen Jumpsuit",
+		category: "jewelery"
 	},
 	{
 		image: "https://www.dapperconfidential.com/wp-content/uploads/2018/08/Vertical-Songzio-e1565809755575.jpg.webp",
-		shortDescription: "White formal suit"
+		shortDescription: "White formal suit",
+		category: "men's clothing"
 	},
 	{
 		image: "https://i.pinimg.com/1200x/39/82/db/3982db516009aa31fb8624e53370f8bb.jpg",
-		shortDescription: "Pattern dresses"
+		shortDescription: "Pattern dresses",
+		category: "women's clothing"
 	},
 	{
 		image: "https://images.indulgexpress.com/uploads/user/ckeditor_images/article/2020/8/20/SN.jpg",
-		shortDescription: "Leather dresses"
+		shortDescription: "Leather dresses",
+		category: "men's clothing"
 	}
 ];
 

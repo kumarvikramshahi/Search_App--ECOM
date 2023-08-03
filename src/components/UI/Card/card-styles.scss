@@ -1,3 +1,5 @@
+$cardBorderRadius: 5px;
+
 .card {
     margin: 20px;
     width: 200px;
@@ -6,12 +8,6 @@
 .smallCard{
     margin: 1% ;
     width: 18%;
-}
-
-.productLink{
-    display: block;
-    text-decoration: none;
-    color: black;
 }
 
 .delOriginalPrice{
@@ -23,5 +19,25 @@
 }
 
 .cardImg{
-    border-radius: 5px;
+    border-radius: $cardBorderRadius;
+}
+
+.viewProduct{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    background-color: #7387edc8;
+    color: white;
+    border: none;
+    padding: 5px 0px;
+    border-radius: $cardBorderRadius;
+    position: absolute;
+    bottom: 5px;
+}
+
+.heart{
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }

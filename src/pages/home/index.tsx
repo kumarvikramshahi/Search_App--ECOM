@@ -61,7 +61,7 @@ export default function Home(): JSX.Element {
 					<div className="boxHeading">Latest Trends</div>
 					<div className="latestTrends">
 						{LatestTrendsData?.map((item, idx) => (
-							<Card link={`/products/`} inputProduct={item} isSmall={true} key={idx} />
+							<Card id={null} isWishlisted={null} setWislisted={null} link={`/products/${item.category}`} inputProduct={item} isSmall={true} key={idx} />
 						))}
 					</div>
 					{popularSuggestions ? <div className="boxHeading">Popular Suggestions</div> : null}

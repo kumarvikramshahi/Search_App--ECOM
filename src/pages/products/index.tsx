@@ -10,6 +10,7 @@ import SearchBar from "../../components/UI/SearchBar/SearchBar";
 
 export default function Products() {
 	const [fakeProductdata, setFakeProductdata] = useState<Product[] | null>(null);
+	const [isWishlisted, setWislisted] = useState<boolean>(false);
 
 	const starArray = [5, 4, 3, 2, 1];
 	const pricesPoints = [500, 1000, 3000, 4000, 5000];
@@ -87,7 +88,7 @@ export default function Products() {
 				</div>
 				<div className="productCards">
 					{fakeProductdata?.map((item, idx) => (
-						<Card link={""} inputProduct={item} isSmall={false} key={idx} />
+						<Card id={idx + 1} isWishlisted={isWishlisted} setWislisted={setWislisted} link={`/products/${item.id}`} inputProduct={item} isSmall={false} key={idx} />
 					))}
 				</div>
 			</div>

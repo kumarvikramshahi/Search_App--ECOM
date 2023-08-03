@@ -17,4 +17,5 @@ export interface ProductCardStyle {
 export interface LatestTrends {
 	image: string;
 	shortDescription: string;
+	category: string;
 }
